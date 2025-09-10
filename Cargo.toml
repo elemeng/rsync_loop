@@ -1,0 +1,17 @@
+[package]
+name        = "rsync_loop"         
+version     = "1.0.0"
+edition     = "2024"               
+authors     = ["elemeng"]
+description = "Loop rsync N times with sleep and countdown"
+documentation = "https://docs.rs/rsync_loop"
+repository  = "https://github.com/elemeng/rsync_loop"
+readme      = "README.md"
+license     = "MIT"               
+keywords    = ["rsync", "cli", "loop", "countdown"]
+categories  = ["command-line-utilities"]
+exclude     = [".github", "release/*"]  
+
+[dependencies]
+clap  = { version = "4", features = ["derive"] }
+ctrlc = "3.5"
